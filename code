@@ -1,0 +1,46 @@
+import React from 'react';
+import {Text, View} from 'react-native';
+
+const YourApp = () => {
+  return (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: ' rgba(0,0,0,0.5)',
+        justifyContent: 'center',
+        alignItems: 'center',
+    
+      }}>
+      <Text>Eng.Esraa Almasri</Text>
+      BMG
+      2018
+      
+       <View
+        style={{
+          width: '34%',
+          height: '5%',
+          backgroundColor: 'red',
+          alignItems:'center'
+        }}
+      >
+        <Text>esraa</Text>
+      </View>
+        <View
+        style={{
+          width: '34%',
+          height: '5%',
+          backgroundColor: 'red',
+        }}
+      />
+  
+    </View>
+  );
+
+ 
+  
+  
+  
+  
+};
+
+export default YourApp;
