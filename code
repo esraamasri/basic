@@ -32,9 +32,10 @@ const YourApp = () => {
     <TextInput
         style={{color:'white',
           height: 40,
+          width:180,
           borderColor: 'white',
           borderWidth: 2,
-         textAlign:'center',  margin:20
+         textAlign:'center',  margin:22
          
         }}
         defaultValue=" type here"
