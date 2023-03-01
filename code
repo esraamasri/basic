@@ -1,9 +1,10 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, View,Image, ScrollView, TextInput,Button} from 'react-native';
 
 const YourApp = () => {
   return (
     <View
+    
       style={{
         flex: 1,
         backgroundColor: ' rgba(0,0,0,0.5)',
@@ -11,29 +12,40 @@ const YourApp = () => {
         alignItems: 'center',
     
       }}>
-      <Text>Eng.Esraa Almasri</Text>
-      BMG
+        <Image
+          source={{
+            uri: 'https://www.nih.gov/sites/default/files/styles/featured_media_breakpoint-medium/public/news-events/news-releases/2021/20230325-cancer.jpg?itok=DgmjFGyX&timestamp=1616681106',
+          }}
+          style={{width: 180, height: 180}}
+          
+        />
+      <Text
+      style={{color:'white'}}
+      >Eng.Esraa Almasri  BMG
       2018
       
-       <View
-        style={{
-          width: '34%',
-          height: '5%',
-          backgroundColor: 'red',
-          alignItems:'center'
+      </Text>
+      
+
+    
+    <TextInput
+        style={{color:'white',
+          height: 40,
+          borderColor: 'white',
+          borderWidth: 2,
+         textAlign:'center'
+         
         }}
-      >
-        <Text>esraa</Text>
-      </View>
-        <View
-        style={{
-          width: '34%',
-          height: '5%',
-          backgroundColor: 'red',
-        }}
+        defaultValue=" type here"
       />
-  
+       <Button
+        title="NEXT"
+        onPress={() => Alert.alert('Simple Button pressed')}
+      />
+      
     </View>
+    
+    
   );
 
  
